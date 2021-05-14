@@ -1,0 +1,5 @@
+#리스트에 위치 지정하여 추가
+
+movie_rank = ['닥터 스트레인지','스플릿','럭키','배트맨']
+movie_rank.insert(1,'슈퍼맨')
+print(movie_rank)
