@@ -1,0 +1,8 @@
+import requests
+btc = requests.get("https://api.bithumb.com/public/ticker/").json()['data']
+
+change = float(btc['max_price']) - float(btc['min_price'])
+if float(btc['max_price']) <= float(btc['opening_price']) + float(change):
+    print('상승장')  
+else:
+    print('하락장')
